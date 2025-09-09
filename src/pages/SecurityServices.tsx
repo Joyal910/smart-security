@@ -1,0 +1,382 @@
+import React from 'react';
+import { Shield, Users, Building, CheckCircle, ArrowRight, Clock, Award, Star, MapPin, Phone, Mail, Check, DollarSign, Globe, Heart, UserCheck, Stethoscope } from 'lucide-react';
+import banner from '../components/Assets/Images/hero_banner.jpeg'
+import securityguardline from '../components/Assets/Images/securityguardsline.jpg'
+import ondutyguard from '../components/Assets/Images/ondutyguard.jpg'
+// Your original images
+
+
+const SecurityServices = () => {
+  const serviceCategories = [
+    {
+      title: 'Facility Access & Perimeter Security',
+      description: 'We provide trained security personnel to control and monitor all facility entry and exit points, ensuring only authorized individuals gain access. Our team maintains a secure perimeter, deterring unauthorized activity and enhancing overall site safety.',
+      features: ['Entrance & Exit Monitoring', 'Perimeter Patrols', 'ID & Credential Verification', 'Intrusion Prevention'],
+      image: ondutyguard
+    },
+    {
+      title: 'Access Control & Incident Response',
+      description: 'From digital access systems to on-ground gatekeeping, our experts ensure strict access control protocols. In case of any security breach or threat, our rapid response team acts immediately to contain and resolve incidents with minimal disruption.',
+      features: ['Access Control Systems', 'Visitor Management', 'Emergency Lockdown Procedures', 'Quick Incident Resolution'],
+      image: 'https://lh3.googleusercontent.com/p/AF1QipOQ1K5NWtmMe1R8gRspr-T2z146fiavR2YQHAVN=s1360-w1360-h1020-rw'
+    },
+    {
+      title: 'Fire & Safety Management',
+      description: 'Our personnel are trained in fire prevention, evacuation procedures, and emergency safety protocols. We integrate safety monitoring with security operations to protect lives and property from potential fire hazards.',
+      features: ['Fire Hazard Monitoring', 'Evacuation Drills', 'Safety Equipment Checks', 'Emergency Medical Assistance'],
+      image: 'https://www.shutterstock.com/image-photo/fire-alarm-training-class-by-260nw-2268988173.jpg'
+    }
+  ];
+
+  const trainingModules = [
+    'Basic Security Training (Appearance, Attitude, Conduct)',
+    'Emergency Response Procedures',
+    'First Aid Certification',
+    'Communication Skills',
+    'Patrol & Observation Techniques',
+    'Access Control Protocols',
+    'Report Writing & Documentation',
+    'Frisking Techniques'
+  ];
+
+  const whyChooseUs = [
+    'Fully compliant with ESI, PF, and government regulations',
+    'Well-groomed, uniformed staff',
+    'Regular performance monitoring and client feedback',
+    '24x7 support and quick emergency response',
+    'Trusted across industries in Kerala'
+  ];
+
+  const clients = [
+    'EVM Motors (All Showrooms in Kerala)',
+    'Bridgeway Motors (Mercedes-Benz)',
+    'Nippon Toyota, Thrissur',
+    'KIMS Hospital, Kasargod',
+    'Skyline Builders, Calicut & Kannur',
+    'PVS Sunrise Super Specialty Hospital, Kozhikode'
+  ];
+
+  return (
+    <div className="overflow-x-hidden">
+    {/* Compact Hero Section - Enhanced mobile responsiveness */}
+<section className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0">
+    <img 
+      src={banner}
+      alt="About Just Hearing Clinic background"
+      className="w-full h-full object-cover"
+    />
+  </div>
+  <div className="absolute inset-0 bg-black/25"></div>
+  
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className="max-w-4xl mx-auto text-center text-white">
+      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
+        Professional{' '}
+        <span className="text-white">
+          Security Services
+        </span>
+      </h1>
+      <p className="text-sm sm:text-base md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
+       Your trusted partner in business security and cleaning excellence since 2001.
+      </p>
+    </div>
+  </div>
+</section>
+
+     {/* Security Services Section - Enhanced mobile layout */}
+<section className="bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-16">
+    <div className="mb-8 sm:mb-12 lg:mb-12">
+      <div className="inline-block mb-4 sm:mb-6">
+        <div className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white" style={{ backgroundColor: '#1E88E5' }}>
+          OUR SERVICES
+        </div>
+      </div>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+        COMPREHENSIVE SECURITY
+        <br className="hidden sm:block" />
+        <span className="sm:hidden"> </span>SOLUTIONS
+      </h2>
+    </div>
+  </div>
+
+  {/* Full-width alternating sections - Mobile optimized */}
+  {/* Full-width alternating sections */}
+          <div className="space-y-0">
+            {serviceCategories.map((service, index) => (
+              <div 
+                key={index}
+                className={`w-full ${index % 2 === 0 ? 'bg-gray-700' : 'bg-gray-800'}`}
+                style={{ backgroundColor: index % 2 === 0 ? '#2b2b2b' : '#1f1f1f' }}
+              >
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-16">
+                  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center ${
+                    index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                  }`}>
+                    <div className={`space-y-4 sm:space-y-6 lg:space-y-6 ${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}>
+                      <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold leading-tight text-white">
+                        {service.title}
+                      </h3>
+                      
+                      <p className="text-base sm:text-lg lg:text-lg text-gray-300 leading-relaxed">
+                        {service.description}
+                      </p>
+  
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-4">
+                        {service.features.map((feature, featureIndex) => (
+                          <div key={featureIndex} className="flex items-start space-x-3">
+                            <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ backgroundColor: '#1E88E5' }}>
+                              <Check className="w-3 h-3 text-white" />
+                            </div>
+                            <span className="text-gray-300 text-sm lg:text-sm">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+  
+                    <div className={`relative ${index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-64 sm:h-80 lg:h-80 object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                      />
+            </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+       {/* Training Program Section - Mobile optimized */}
+      <section
+        className="py-16 sm:py-20 lg:py-20 relative bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${ondutyguard})`,
+          backgroundColor: "#f8f9fa"
+        }}
+      >
+        {/* Dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Heading */}
+          <div className="mb-12 sm:mb-16 lg:mb-16">
+            <div className="inline-block mb-4 sm:mb-6">
+              <div className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white" style={{ backgroundColor: '#1E88E5' }}>
+                TRAINING PROGRAM
+              </div>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white drop-shadow-lg">
+              COMPREHENSIVE STAFF
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>TRAINING MODULES
+            </h2>
+            <p className="text-sm sm:text-base lg:text-lg text-white mt-4 sm:mt-6 max-w-4xl drop-shadow-md">
+              Our security personnel undergo rigorous, industry-standard training to
+              handle emergencies and maintain professionalism at all times. Each
+              module is designed to build expertise and ensure the highest standards
+              of service delivery.
+            </p>
+          </div>
+
+          {/* Training Modules Grid - Responsive layout with mobile limitation */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {trainingModules.map((module, index) => (
+              <div
+                key={index}
+                className="bg-white/95 p-4 sm:p-6 rounded-xl border-0 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-sm"
+              >
+                <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start sm:items-center lg:items-start xl:items-center space-y-3 sm:space-y-0 sm:space-x-4 lg:space-x-0 lg:space-y-3 xl:space-y-0 xl:space-x-4">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md" style={{ backgroundColor: '#1E88E5' }}>
+                    <span className="text-white font-bold text-base">
+                      {index + 1}
+                    </span>
+                  </div>
+                  <h3 className="text-sm sm:text-lg lg:text-base xl:text-lg font-bold leading-tight" style={{ color: '#2B2B2B' }}>
+                    {module}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section - Mobile optimized */}
+      <section className="py-12 sm:py-16 lg:py-16" style={{ backgroundColor: '#FFFFFF' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 sm:mb-12 lg:mb-12">
+            <div className="inline-block mb-3 sm:mb-4">
+              <div className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white" style={{ backgroundColor: '#1E88E5' }}>
+                WHY CHOOSE US
+              </div>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight" style={{ color: '#2B2B2B' }}>
+              PROFESSIONAL SECURITY
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>EXCELLENCE
+            </h2>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-3 sm:mt-4 max-w-3xl">
+              We provide exceptional security services with trained professionals who understand 
+              the importance of safety, professionalism, and comprehensive protection.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-12 items-center">
+            {/* Left Side - Professional Image */}
+            <div className="relative order-last lg:order-first">
+              <div className="relative overflow-hidden rounded-xl">
+                <img
+                  src={securityguardline}
+                  alt="Professional security team"
+                  className="w-full h-64 sm:h-80 lg:h-[400px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+            </div>
+
+            {/* Right Side - Feature Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 order-first lg:order-last">
+              <div className="p-4 sm:p-6 rounded-xl text-white relative overflow-hidden" style={{ backgroundColor: '#1E88E5' }}>
+                <div className="relative z-10">
+                  <div className="mb-3">
+                    <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold leading-tight text-white mb-2">
+                    Advanced Protection
+                  </h3>
+                  <p className="text-xs sm:text-sm leading-relaxed" style={{ color: '#E3F2FD' }}>
+                    Comprehensive security protocols with state-of-the-art equipment and trained personnel.
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-6 rounded-xl bg-white border-2 border-gray-200 hover:border-blue-300 transition-colors">
+                <div className="mb-3">
+                  <Clock className="h-5 w-5 sm:h-6 sm:w-6" style={{ color: '#1E88E5' }} />
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold leading-tight mb-2" style={{ color: '#2B2B2B' }}>
+                  24/7 Monitoring
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Round-the-clock surveillance and immediate response to any security threats or emergencies.
+                </p>
+              </div>
+
+              <div className="p-4 sm:p-6 rounded-xl bg-white border-2 border-gray-200 hover:border-blue-300 transition-colors">
+                <div className="mb-3">
+                  <UserCheck className="h-5 w-5 sm:h-6 sm:w-6" style={{ color: '#1E88E5' }} />
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold leading-tight mb-2" style={{ color: '#2B2B2B' }}>
+                  Certified Guards
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Professionally trained and certified security personnel with extensive field experience.
+                </p>
+              </div>
+
+              <div className="p-4 sm:p-6 rounded-xl text-white relative overflow-hidden" style={{ backgroundColor: '#1E88E5' }}>
+                <div className="relative z-10">
+                  <div className="mb-3">
+                    <Award className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold leading-tight text-white mb-2">
+                    Proven Excellence
+                  </h3>
+                  <p className="text-xs sm:text-sm leading-relaxed" style={{ color: '#E3F2FD' }}>
+                    20+ years of experience with 300+ successful security implementations across industries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted Clients Section - Mobile optimized */}
+      <section className="py-16 sm:py-20 lg:py-20" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-16">
+            <div className="inline-block mb-4 sm:mb-6">
+              <div className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white" style={{ backgroundColor: '#1E88E5' }}>
+                TRUSTED CLIENTS
+              </div>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ color: '#2B2B2B' }}>
+              TRUSTED BY INDUSTRY
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>LEADERS
+            </h2>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-4 sm:mt-6 max-w-4xl mx-auto leading-relaxed px-2">
+              Leading businesses across healthcare, automotive, construction, and corporate sectors 
+              trust us with their security needs. Our reputation speaks through our client partnerships.
+            </p>
+          </div>
+
+          {/* Client Logos Grid - Responsive layout */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
+            {clients.map((client, index) => (
+              <div
+                key={index}
+                className="bg-white p-3 sm:p-4 lg:p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[100px] sm:min-h-[120px]"
+              >
+                <div className="text-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                    <Building className="w-6 h-6 sm:w-8 sm:h-8 text-gray-400" />
+                  </div>
+                  <p className="text-xs text-gray-500 font-medium leading-tight">{client}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Trust Indicators - Mobile optimized */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+            <div className="text-center">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+                <Shield className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>500+</h3>
+              <p className="text-sm sm:text-base text-gray-600">Satisfied Clients</p>
+            </div>
+            <div className="text-center">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+                <Clock className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>14+</h3>
+              <p className="text-sm sm:text-base text-gray-600">Years of Experience</p>
+            </div>
+            <div className="text-center">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+                <Globe className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>30+</h3>
+              <p className="text-sm sm:text-base text-gray-600">Countries Served</p>
+            </div>
+          </div>
+ {/* Call to Action - Mobile friendly */}
+          <div className="text-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
+              <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl" style={{ backgroundColor: '#1E88E5' }}>
+                View All Our Clients
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+              </button>
+              <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
+            </div>
+            <p className="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4 px-4">
+              Discover our complete portfolio of trusted partnerships
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      
+    </div>
+  );
+};
+
+export default SecurityServices;
