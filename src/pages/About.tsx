@@ -98,19 +98,22 @@ const About = () => {
                 </span>
               </h2>
 
-              <div className="space-y-4">
-                <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
-                  Mr. Kuriakose John, the visionary Founder and Managing Director of Smart Security & Cleaning Services, is a seasoned professional with a legacy of dedication, discipline, and leadership. He began his career at the young age of 19 by joining the Indian Navy, where he proudly served the nation for 18 years before voluntarily retiring to pursue his entrepreneurial ambitions.
-                </p>
+           <div className="space-y-4 max-w-3xl mx-auto text-justify">
+  <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+    Mr. Kuriakose John, the visionary Founder and Managing Director of Smart Security & Cleaning Services, is a seasoned professional with a legacy of dedication, discipline, and leadership. He began his career at the young age of 19 by joining the Indian Navy, where he proudly served the nation for 18 years before voluntarily retiring to pursue his entrepreneurial ambitions.
+  </p>
 
-                <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
-                 In 2001, he laid the foundation of Smart, driven by his passion to deliver dependable and professional security, and cleaning services.
-                </p>
+  <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+    In 2001, he laid the foundation of Smart, driven by his passion to deliver dependable and professional security, and cleaning services.
+  </p>
 
-                <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
-                  His journey is a testament to hard work, optimism, and relentless perseverance. As the strategic head of the company, he continues to guide Smart's growth, setting new benchmarks in the industry. He is now joined by his son, Mr. Arun Abey John, sharing a common vision—to build Smart into a globally trusted brand that not only ensures client satisfaction but also uplifts the lives of its employees.
-                </p>
-              </div>
+  <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+    His journey is a testament to hard work, optimism, and relentless perseverance. As the strategic head of the company, he continues to guide Smart's growth, setting new benchmarks in the industry. He is now joined by his son, Mr. Arun Abey John, sharing a common vision—to build Smart into a globally trusted brand that not only ensures client satisfaction but also uplifts the lives of its employees.
+  </p>
+</div>
+
+
+
             </div>
           </div>
         </div>
