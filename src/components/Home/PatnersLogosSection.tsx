@@ -98,7 +98,7 @@ const PartnerLogosSection: React.FC = () => {
               <h3 className="text-2xl lg:text-3xl font-bold text-white whitespace-nowrap">
                 WE WORKED WITH TOP
                 <br />
-                LARGEST COMPANIES.
+               COMPANIES.
               </h3>
             </div>
 
