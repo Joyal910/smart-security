@@ -5,6 +5,14 @@ import banner from '../components/Assets/Images/hero_banner.jpeg';
 import cleaning_training from '../components/Assets/Images/cleaning_training.jpg';
 import cleaningserviceline from '../components/Assets/Images/cleaningserviceline.jpeg';
 
+import amMotorsLogo from '../components/Assets/client logos/am motors logo.jpg';
+import assetLogo from '../components/Assets/client logos/asset logo.jpg';
+import benzLogo from '../components/Assets/client logos/benz.jpg';
+import evmVolkswagenLogo from '../components/Assets/client logos/evm_volkswagen_logo.jpg';
+import malabarHospLogo from '../components/Assets/client logos/malabar hosp logo.jpg';
+import muthootHospLogo from '../components/Assets/client logos/muthoot hosp logo.jpg';
+import pushpagiriCollegeLogo from '../components/Assets/client logos/pushpagiri college logo.jpg';
+
 const FacilityManagement: React.FC = () => {
   const serviceCategories = [
     {
@@ -46,14 +54,39 @@ const FacilityManagement: React.FC = () => {
     'Trusted by healthcare and corporate clients'
   ];
 
-  const clients = [
-    'KIMS Hospital, Kasargod',
-    'PVS Sunrise Super Specialty Hospital, Kozhikode',
-    'Skyline Builders Corporate Office',
-    'EVM Motors Showrooms',
-    'Bridgeway Motors Facilities',
-    'Various Corporate Offices in Kerala'
-  ];
+ const clients = [
+  {
+    name: 'Malabar Hospital, Kasargod', // ✅ matched with malabarHospLogo
+    logo: malabarHospLogo,
+    alt: 'Malabar Hospital Logo'
+  },
+  {
+    name: 'Muthoot Hospital, Kozhikode', // ✅ matched with muthootHospLogo
+    logo: muthootHospLogo,
+    alt: 'Muthoot Hospital Logo'
+  },
+  {
+    name: 'Asset Homes Corporate Office', // ✅ matched with assetLogo
+    logo: assetLogo,
+    alt: 'Asset Homes Logo'
+  },
+  {
+    name: 'EVM Volkswagen Showrooms', // ✅ matched with evmVolkswagenLogo
+    logo: evmVolkswagenLogo,
+    alt: 'EVM Volkswagen Logo'
+  },
+  {
+    name: 'AM Motors Facilities', // ✅ matched with amMotorsLogo
+    logo: amMotorsLogo,
+    alt: 'AM Motors Logo'
+  },
+  {
+    name: 'Mercedes-Benz Showrooms', // ✅ matched with benzLogo
+    logo: benzLogo,
+    alt: 'Mercedes-Benz Logo'
+  }
+];
+
 
   return (
     <div className="overflow-x-hidden">
@@ -438,83 +471,89 @@ const FacilityManagement: React.FC = () => {
       </section>
 
       {/* Trusted Clients Section - Mobile optimized */}
-      <section className="py-16 sm:py-20 lg:py-20" style={{ backgroundColor: '#f8f9fa' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 lg:mb-16">
-            <div className="inline-block mb-4 sm:mb-6">
-              <div className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white" style={{ backgroundColor: '#1E88E5' }}>
-                TRUSTED CLIENTS
-              </div>
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ color: '#2B2B2B' }}>
-              TRUSTED BY HEALTHCARE
-              <br className="hidden sm:block" />
-              <span className="sm:hidden"> </span>& CORPORATE LEADERS
-            </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-4 sm:mt-6 max-w-4xl mx-auto leading-relaxed px-2">
-              Leading hospitals, corporate offices, and industrial facilities trust us with their cleaning needs. 
-              Our reputation for excellence speaks through our long-term client partnerships.
-            </p>
-          </div>
-
-          {/* Client Logos Grid - Responsive layout */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="bg-white p-3 sm:p-4 lg:p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[100px] sm:min-h-[120px]"
-              >
-                <div className="text-center">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                    <Building className="w-6 h-6 sm:w-8 sm:h-8 text-gray-400" />
-                  </div>
-                  <p className="text-xs text-gray-500 font-medium leading-tight">{client}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Trust Indicators - Mobile optimized */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
-            <div className="text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
-                <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>200+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Cleaned Facilities</p>
-            </div>
-            <div className="text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
-                <Clock className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>15+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Years of Experience</p>
-            </div>
-            <div className="text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
-                <Users className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>500+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Trained Staff</p>
-            </div>
-          </div>
- {/* Call to Action - Mobile friendly */}
-          <div className="text-center">
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
-              <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl" style={{ backgroundColor: '#1E88E5' }}>
-                View All Our Clients
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </button>
-              <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
-            </div>
-            <p className="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4 px-4">
-              Discover our complete portfolio of trusted partnerships
-            </p>
-          </div>
-          
+<section className="py-16 sm:py-20 lg:py-20" style={{ backgroundColor: '#f8f9fa' }}>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12 sm:mb-16 lg:mb-16">
+      <div className="inline-block mb-4 sm:mb-6">
+        <div className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white" style={{ backgroundColor: '#1E88E5' }}>
+          TRUSTED CLIENTS
         </div>
-      </section>
+      </div>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ color: '#2B2B2B' }}>
+        TRUSTED BY HEALTHCARE
+        <br className="hidden sm:block" />
+        <span className="sm:hidden"> </span>& CORPORATE LEADERS
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-4 sm:mt-6 max-w-4xl mx-auto leading-relaxed px-2">
+        Leading hospitals, corporate offices, and industrial facilities trust us with their cleaning needs. 
+        Our reputation for excellence speaks through our long-term client partnerships.
+      </p>
+    </div>
+
+    {/* Client Logos Grid - Updated with actual logo images */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
+      {clients.map((client, index) => (
+        <div
+          key={index}
+          className="bg-white p-3 sm:p-4 lg:p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[100px] sm:min-h-[120px] group"
+        >
+          <div className="text-center">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-2 sm:mb-3 overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center p-1">
+              <img 
+                src={client.logo} 
+                alt={client.alt}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 filter grayscale hover:grayscale-0"
+              />
+            </div>
+            <p className="text-xs text-gray-600 font-medium leading-tight text-center px-1">
+              {client.name}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Trust Indicators - Mobile optimized */}
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+      <div className="text-center">
+        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+          <Building className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+        </div>
+        <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>300+</h3>
+        <p className="text-sm sm:text-base text-gray-600">Facilities Served</p>
+      </div>
+      <div className="text-center">
+        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+          <Clock className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+        </div>
+        <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>25+</h3>
+        <p className="text-sm sm:text-base text-gray-600">Years of Experience</p>
+      </div>
+      <div className="text-center">
+        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+          <Users className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+        </div>
+        <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>1500+</h3>
+        <p className="text-sm sm:text-base text-gray-600">Trained Staff</p>
+      </div>
+    </div>
+
+    {/* Call to Action - Mobile friendly */}
+    <div className="text-center">
+      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
+        <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl" style={{ backgroundColor: '#1E88E5' }}>
+          View All Our Clients
+          <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+        </button>
+        <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
+      </div>
+      <p className="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4 px-4">
+        Discover our complete portfolio of trusted partnerships
+      </p>
+    </div>
+  </div>
+</section>
 
       
     </div>

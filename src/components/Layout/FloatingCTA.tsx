@@ -20,7 +20,7 @@ const FloatingCTA: React.FC = () => {
         onClick={handleWhatsApp}
         className="flex items-center justify-end space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105"
       >
-        <span className="font-medium">WhatsApp</span>
+        {/* <span className="font-medium"></span> */}
         <MessageCircle className="h-5 w-5" />
       </button>
 
@@ -29,7 +29,7 @@ const FloatingCTA: React.FC = () => {
         onClick={handleCall}
         className="flex items-center justify-end space-x-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105"
       >
-        <span className="font-medium">Call Now</span>
+        {/* <span className="font-medium"></span> */}
         <Phone className="h-5 w-5" />
       </button>
     </div>

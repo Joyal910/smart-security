@@ -1,11 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Heart, Users, Building, CheckCircle, ArrowRight, Clock, Award, Star, MapPin, Phone, Mail, Check, DollarSign, Globe, Shield, UserCheck, Stethoscope } from 'lucide-react';
+import { Heart, Users, Building, CheckCircle, ArrowRight, Clock, Award, Star, MapPin, Phone, Mail, Check, DollarSign, Globe, Shield, UserCheck, Stethoscope, BuildingIcon } from 'lucide-react';
 import banner from '../components/Assets/Images/hero_banner.jpeg';
 import patientasssit1 from '../components/Assets/Images/patientassist1.jpeg';
 import patientasssit2 from '../components/Assets/Images/patient2.jpg';
 import patientasssit3 from '../components/Assets/Images/patient3.jpeg';
 import patientasssit4 from '../components/Assets/Images/patient4.jpeg';
+import malabarHospLogo from '../components/Assets/client logos/malabar hosp logo.jpg';
+import muthootHospLogo from '../components/Assets/client logos/muthoot hosp logo.jpg';
+import pushpagiriCollegeLogo from '../components/Assets/client logos/pushpagiri college logo.jpg';
+import pvsSunriseHospitalLogo from '../components/Assets/client logos/pvs sunsrise hospital logo.png';
+import kimsHospLogo from '../components/Assets/client logos/KIMS hosp logo.jpg';
+import GimcareHospitalLogo from '../components/Assets/client logos/GimcareHospitalLogo.png';
 
 const HardFM: React.FC = () => {
   const serviceCategories = [
@@ -48,14 +54,38 @@ const HardFM: React.FC = () => {
     'Trusted by leading hospitals across Kerala'
   ];
 
-  const clients = [
-    'KIMS Hospital, Kasargod',
-    'PVS Sunrise Super Specialty Hospital, Kozhikode',
-    'Various Multi-Specialty Hospitals',
-    'Regional Healthcare Centers',
-    'Private Medical Facilities',
-    'Rehabilitation Centers'
-  ];
+    const clients = [
+  {
+    name: 'KIMS Hospital, Kasargod',
+    logo: kimsHospLogo, // Replace with appropriate hospital logo
+    alt: 'KIMS Hospital Logo'
+  },
+  {
+    name: 'PVS Sunrise Super Specialty Hospital, Kozhikode',
+    logo: pvsSunriseHospitalLogo,
+    alt: 'PVS Sunrise Hospital Logo'
+  },
+  {
+    name: 'Malabar Hospital',
+    logo: malabarHospLogo,
+    alt: 'Malabar Hospital Logo'
+  },
+  {
+    name: 'Muthoot Hospital',
+    logo: muthootHospLogo,
+    alt: 'Muthoot Hospital'
+  },
+  {
+    name: 'GimCare Hospital',
+    logo: GimcareHospitalLogo,
+    alt: 'GimCare Hospital'
+  },
+  {
+    name: 'Pushpagiri College',
+    logo: pushpagiriCollegeLogo, // Generic corporate logo
+    alt: 'Pushpagiri College Logo'
+  }
+];
 
   return (
     <div className="overflow-x-hidden">
@@ -451,81 +481,86 @@ const HardFM: React.FC = () => {
         </div>
       </section>
 
-      {/* Trusted Clients Section */}
-      <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: '#f8f9fa' }}>
+      {/* Trusted Clients Section - Mobile optimized */}
+      <section className="py-16 sm:py-20 lg:py-20" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-16">
             <div className="inline-block mb-4 sm:mb-6">
               <div className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white" style={{ backgroundColor: '#1E88E5' }}>
-                TRUSTED PARTNERS
+                TRUSTED CLIENTS
               </div>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight" style={{ color: '#2B2B2B' }}>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ color: '#2B2B2B' }}>
               TRUSTED BY HEALTHCARE
               <br className="hidden sm:block" />
-              <span className="sm:hidden"> </span>FACILITIES
+              <span className="sm:hidden"> </span>& CORPORATE LEADERS
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-4 sm:mt-6 max-w-4xl mx-auto leading-relaxed px-2">
-              Premier hospitals and healthcare facilities trust us with their patient assistance needs. 
-              Our commitment to compassionate care has built lasting partnerships across the healthcare sector.
+              Leading hospitals, corporate offices, and industrial facilities trust us with their cleaning needs. 
+              Our reputation for excellence speaks through our long-term client partnerships.
             </p>
           </div>
-
-          {/* Client Logos Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-10 lg:mb-12">
+      
+          {/* Client Logos Grid - Updated with actual logo images */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[100px] sm:min-h-[120px]"
+                className="bg-white p-3 sm:p-4 lg:p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center min-h-[100px] sm:min-h-[120px] group"
               >
                 <div className="text-center">
-                  <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gray-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                    <Building className="w-6 sm:w-8 h-6 sm:h-8 text-gray-400" />
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-2 sm:mb-3 overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center p-1">
+                    <img 
+                      src={client.logo} 
+                      alt={client.alt}
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 filter grayscale hover:grayscale-0"
+                    />
                   </div>
-                  <p className="text-xs text-gray-500 font-medium leading-tight">{client}</p>
+                  <p className="text-xs text-gray-600 font-medium leading-tight text-center px-1">
+                    {client.name}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
-
-          {/* Trust Indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-10 lg:mb-12">
+      
+          {/* Trust Indicators - Mobile optimized */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
             <div className="text-center">
-              <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
-                <Heart className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>10,000+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Patients Assisted</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
-                <Clock className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>12+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Years of Service</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
-                <Users className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+                <Building className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>300+</h3>
-              <p className="text-sm sm:text-base text-gray-600">Trained Attendants</p>
+              <p className="text-sm sm:text-base text-gray-600">Facilities Served</p>
+            </div>
+            <div className="text-center">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+                <Clock className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>25+</h3>
+              <p className="text-sm sm:text-base text-gray-600">Years of Experience</p>
+            </div>
+            <div className="text-center">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4" style={{ backgroundColor: '#1E88E5' }}>
+                <Users className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2" style={{ color: '#2B2B2B' }}>1500+</h3>
+              <p className="text-sm sm:text-base text-gray-600">Trained Staff</p>
             </div>
           </div>
-
-          {/* Call to Action - View More Clients */}
+      
+          {/* Call to Action - Mobile friendly */}
           <div className="text-center">
-            <div className="inline-flex items-center space-x-4">
-              <div className="h-px bg-gray-300 w-8 sm:w-20"></div>
-              <button className="inline-flex items-center px-4 sm:px-6 lg:px-8 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl" style={{ backgroundColor: '#1E88E5' }}>
-                <span className="hidden sm:inline">View Healthcare Partners</span>
-                <span className="sm:hidden">View Partners</span>
-                <ArrowRight className="ml-2 w-4 sm:w-5 h-4 sm:h-5" />
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
+              <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl" style={{ backgroundColor: '#1E88E5' }}>
+                View All Our Clients
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </button>
-              <div className="h-px bg-gray-300 w-8 sm:w-20"></div>
+              <div className="h-px bg-gray-300 w-12 sm:w-20 hidden sm:block"></div>
             </div>
             <p className="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4 px-4">
-              Discover our complete network of healthcare partnerships
+              Discover our complete portfolio of trusted partnerships
             </p>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, Mail, MapPin, Shield, CheckCircle, ExternalLink } from 'lucide-react';
 import footer from '../Assets/Images/footer image.png';
 import brochure from '../Assets/brochure/SMART BROCHURE.pdf'
+import logo from "../Assets/Images/favicon.png"
 
 const CTASection = () => {
   return (
@@ -92,15 +93,20 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-12">
             {/* Company Info */}
             <div className="sm:col-span-2 lg:col-span-2 space-y-4 sm:space-y-6">
-              <div className="flex items-center space-x-3">
-                <div className="bg-blue-500 p-2 rounded-lg">
-                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+              <div className="flex items-center space-x-4">
+                <div className=" rounded-2xl shadow-md">
+                  <img
+                    src={logo}
+                    alt="Smart logo"
+                    className="h-15 w-15 sm:h-12 sm:w-12"
+                  />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white">Smart Security</h3>
-                  <p className="text-gray-400 text-sm sm:text-base">& Cleaning Services</p>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white">Smart Security</h3>
+                  <p className="text-gray-300 text-base sm:text-lg">& Cleaning Services</p>
                 </div>
               </div>
+
               
               <p className="text-gray-400 leading-relaxed text-sm sm:text-base max-w-md">
                 The intuitive platform and the perfect partner for your security and cleaning services needs. 
