@@ -94,18 +94,23 @@ const Footer: React.FC = () => {
             {/* Company Info */}
             <div className="sm:col-span-2 lg:col-span-2 space-y-4 sm:space-y-6">
               <div className="flex items-center space-x-4">
-                <div className=" rounded-2xl shadow-md">
+                <div className="rounded-2xl shadow-md">
                   <img
                     src={logo}
                     alt="Smart logo"
-                    className="h-15 w-15 sm:h-12 sm:w-12"
+                    className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 object-contain"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white">Smart Security</h3>
-                  <p className="text-gray-300 text-base sm:text-lg">& Cleaning Services</p>
+                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">
+                    Smart Security
+                  </h3>
+                  <p className="text-gray-300 text-sm sm:text-base md:text-lg">
+                    & Cleaning Services
+                  </p>
                 </div>
               </div>
+
 
               
               <p className="text-gray-400 leading-relaxed text-sm sm:text-base max-w-md">
