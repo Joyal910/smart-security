@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
+import patient_pic from "../Assets/Images/patient4.jpeg"
+import security_pic from "../Assets/Images/ondutyguard.jpg"
 
 
 
@@ -28,7 +30,7 @@ const ServicesSection: React.FC = () => {
             {/* Front of card - Image */}
             <div className="flip-card-front">
               <img
-                src="https://content.jdmagicbox.com/comp/kottayam/n8/9999px481.x481.160723120135.z1n8/catalogue/bharat-security-service-ettumanur-kottayam-alb3u.jpg"
+                src={security_pic}
                 alt="Smart Security Services"
                 className="w-full h-full object-cover"
               />
@@ -132,7 +134,7 @@ const ServicesSection: React.FC = () => {
             {/* Front of card - Image */}
             <div className="flip-card-front">
               <img
-                src="https://images.pexels.com/photos/4225880/pexels-photo-4225880.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={patient_pic}
                 alt="Patient Assist Services"
                 className="w-full h-full object-cover"
               />

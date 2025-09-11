@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import banner from '../components/Assets/Images/hero_banner.jpeg';
+import { Helmet } from 'react-helmet-async';
 
 // Extend Window interface for Google Maps
 declare global {
@@ -226,33 +227,67 @@ const Contact: React.FC = () => {
 
 
 
-  return (
-    <div className="animate-fade-in">
-      {/* Hero Section - Matching About page style */}
-      <section className="relative min-h-[30vh] sm:min-h-[35vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={banner}
-            alt="Contact Smart Security background"
-            className="w-full h-full object-cover"
-          />
+return (
+  <div className="animate-fade-in">
+    <Helmet>
+      {/* Primary Meta Tags */}
+      <title>Contact Us | Smart Security & Cleaning Services Kottayam</title>
+      <meta name="description" content="Contact us for security, cleaning, and patient care in Kottayam. Get quotes for security guard services, office cleaning, home nursing, and patient care services. Available 24/7." />
+      <meta name="keywords" content="contact security services Kottayam, book cleaning service Kottayam, home nursing services Kottayam, security guard contact Kottayam, cleaning service booking, patient care contact Kerala, 24/7 security services, office cleaning quotes" />
+      
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://yourdomain.com/contact" />
+      
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://yourdomain.com/contact" />
+      <meta property="og:title" content="Contact Us | Smart Security & Cleaning Services Kottayam" />
+      <meta property="og:description" content="Contact us for security, cleaning, and patient care in Kottayam. Get quotes for security guard services, office cleaning, home nursing, and patient care services. Available 24/7." />
+      <meta property="og:image" content="https://yourdomain.com/images/contact-og-image.jpg" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:site_name" content="Smart Security & Cleaning Services" />
+      
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://yourdomain.com/contact" />
+      <meta property="twitter:title" content="Contact Us | Smart Security & Cleaning Services Kottayam" />
+      <meta property="twitter:description" content="Contact us for security, cleaning, and patient care in Kottayam. Get quotes for security guard services, office cleaning, home nursing, and patient care services. Available 24/7." />
+      <meta property="twitter:image" content="https://yourdomain.com/images/contact-twitter-image.jpg" />
+      
+      {/* Additional Meta Tags */}
+      <meta name="robots" content="index, follow" />
+      <meta name="author" content="Smart Security & Cleaning Services" />
+      <meta name="geo.region" content="IN-KL" />
+      <meta name="geo.placename" content="Kottayam" />
+      <meta name="geo.position" content="9.5916;76.5222" />
+      <meta name="ICBM" content="9.5916, 76.5222" />
+    </Helmet>
+
+    {/* Hero Section - Matching About page style */}
+    <section className="relative min-h-[30vh] sm:min-h-[35vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <img 
+          src={banner}
+          alt="Contact Smart Security background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-black/20"></div>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
+            Get In{' '}
+             <span className="text-white block sm:inline">
+              Touch
+            </span>
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-4 sm:px-0">
+            Ready to secure your business? Contact Kerala's most trusted security and cleaning partner.
+          </p>
         </div>
-        <div className="absolute inset-0 bg-black/20"></div>
-        
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
-              Get In{' '}
-               <span className="text-white block sm:inline">
-                Touch
-              </span>
-            </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-4 sm:px-0">
-              Ready to secure your business? Contact Kerala's most trusted security and cleaning partner.
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
       {/* Contact Methods Section - Matching About page style */}
       <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white">

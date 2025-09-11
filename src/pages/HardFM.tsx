@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Heart, Users, Building, CheckCircle, ArrowRight, Clock, Award, Star, MapPin, Phone, Mail, Check, DollarSign, Globe, Shield, UserCheck, Stethoscope } from 'lucide-react';
 import banner from '../components/Assets/Images/hero_banner.jpeg';
 import patientasssit1 from '../components/Assets/Images/patientassist1.jpeg';
@@ -58,31 +59,188 @@ const HardFM: React.FC = () => {
 
   return (
     <div className="overflow-x-hidden">
-     {/* Compact Hero Section */}
-<section className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
-  <div className="absolute inset-0">
-    <img 
-      src={banner}
-      alt="About Just Hearing Clinic background"
-      className="w-full h-full object-cover"
-    />
-  </div>
-  <div className="absolute inset-0 bg-black/25"></div>
-  
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="max-w-4xl mx-auto text-center text-white">
-      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
-        Patient{' '}
-        <span className="text-white">
-          Assist Services
-        </span>
-      </h1>
-      <p className="text-sm sm:text-lg md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
-       Your trusted partner in business security and facility excellence since 2001."
-      </p>
-    </div>
-  </div>
-</section>
+      <Helmet>
+        {/* Page Title */}
+        <title>Patient Care Services for Hospitals in Kottayam | Home Nursing & Elderly Care</title>
+        
+        {/* Meta Description */}
+        <meta 
+          name="description" 
+          content="Affordable home nursing, patient care services, and elderly care at home in Kottayam. Smart Security provides professional patient escort, bedside care, and healthcare assistance for hospitals and home care with trained compassionate staff across Kerala." 
+        />
+        
+        {/* Meta Keywords */}
+        <meta 
+          name="keywords" 
+          content="home nursing Kottayam, patient care services Kottayam, home care services Kottayam, elderly care Kottayam, patient escort services, bedside care Kottayam, hospital assistance Kerala, healthcare support services, nursing services Kottayam, patient mobility assistance, home healthcare Kerala, medical attendant services Kottayam" 
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://smartsecuritycleaning.com/services/patient-assist" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Patient Care Services for Hospitals in Kottayam | Home Nursing & Elderly Care" />
+        <meta property="og:description" content="Affordable home nursing, patient care services, and elderly care at home in Kottayam. Professional patient escort, bedside care, and healthcare assistance with trained compassionate staff." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smartsecuritycleaning.com/services/patient-assist" />
+        <meta property="og:image" content="https://smartsecuritycleaning.com/assets/patient-care-services-og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Patient Care Services in Kottayam - Home Nursing, Elderly Care, Patient Assist Services" />
+        <meta property="og:site_name" content="Smart Security & Cleaning Services" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Patient Care Services for Hospitals in Kottayam | Home Nursing & Elderly Care" />
+        <meta name="twitter:description" content="Affordable home nursing, patient care services, and elderly care at home in Kottayam. Professional healthcare assistance with trained compassionate staff." />
+        <meta name="twitter:image" content="https://smartsecuritycleaning.com/assets/patient-care-services-twitter-card.jpg" />
+        <meta name="twitter:image:alt" content="Patient Care Services in Kottayam - Home Nursing & Elderly Care" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Smart Security & Cleaning Services" />
+        <meta name="geo.region" content="IN-KL" />
+        <meta name="geo.placename" content="Kottayam, Kerala" />
+        
+        {/* JSON-LD Structured Data for Patient Care Services */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Patient Care Services Kottayam",
+            "description": "Professional patient care services including home nursing, elderly care, patient escort, bedside care, and healthcare assistance in Kottayam and across Kerala hospitals.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Smart Security & Cleaning Services",
+              "image": "https://smartsecuritycleaning.com/assets/smart-security-cleaning-logo.png",
+              "url": "https://smartsecuritycleaning.com/services/patient-assist",
+              "telephone": "+91-481-2563333",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Parayil Building, Opp. Punjab National Bank, Kalathipady",
+                "addressLocality": "Kottayam",
+                "addressRegion": "Kerala",
+                "postalCode": "686010",
+                "addressCountry": "IN"
+              }
+            },
+            "serviceType": "Healthcare Support Services",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Kottayam"
+              },
+              {
+                "@type": "State", 
+                "name": "Kerala"
+              }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Patient Care & Home Nursing Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Patient Escort & Mobility Services",
+                    "description": "Professional patient escort services with wheelchair assistance, stretcher transportation, and inter-department mobility support."
+                  }
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Admission & Discharge Support",
+                    "description": "Comprehensive hospital admission and discharge assistance including documentation, family coordination, and insurance support."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "Bedside Care & Comfort Services",
+                    "description": "Dedicated bedside attendants providing companionship, meal assistance, basic personal care, and emotional support."
+                  }
+                }
+              ]
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Training Modules",
+                "value": "8 comprehensive healthcare training modules including patient care ethics and hospital protocols"
+              },
+              {
+                "@type": "PropertyValue", 
+                "name": "Specialization",
+                "value": "Patient care ethics, hospital protocols, and compassionate healthcare assistance"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Confidentiality",
+                "value": "Strict adherence to patient privacy and confidentiality standards"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Availability",
+                "value": "24x7 patient assistance services"
+              }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "priceCurrency": "INR",
+              "areaServed": {
+                "@type": "Place",
+                "name": "Kerala, India"
+              },
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "description": "Affordable patient care services"
+              }
+            },
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Hospitals, Healthcare Centers, Families, Elderly Patients, Home Care Recipients"
+            },
+            "category": [
+              "Home Nursing",
+              "Patient Care",
+              "Elderly Care", 
+              "Healthcare Support",
+              "Hospital Assistance"
+            ]
+          })}
+        </script>
+      </Helmet>
+
+      {/* Compact Hero Section */}
+      <section className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={banner}
+            alt="Patient Care Services in Kottayam - Home Nursing, Elderly Care, Patient Assist Services"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/25"></div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+              Patient{' '}
+              <span className="text-white">
+                Assist Services
+              </span>
+            </h1>
+            <p className="text-sm sm:text-lg md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
+             Your trusted partner in compassionate patient care and healthcare excellence since 2001.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Patient Services Section */}
       <section className="bg-white">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Users, Award, Shield, Clock, CheckCircle, Target, Check } from 'lucide-react';
 import founder from '../components/Assets/Images/founder.jpg'
 import whyusbg from '../components/Assets/Images/whyusbg.jpg'
@@ -6,7 +7,6 @@ import banner from '../components/Assets/Images/hero_banner.jpeg'
 import about_image from '../components/Assets/Images/about image.jpeg'
 
 const About = () => {
-
 
   const values = [
     { icon: Shield, title: 'Trust & Reliability', description: 'Building lasting relationships through consistent, dependable service delivery' },
@@ -38,12 +38,122 @@ const About = () => {
 
   return (
     <div className="animate-fade-in">
+      <Helmet>
+        {/* Page Title */}
+        <title>About Us | Smart Security & Cleaning Services Kottayam</title>
+        
+        {/* Meta Description */}
+        <meta 
+          name="description" 
+          content="Smart Security & Cleaning Services is a trusted multi-service provider for homes, offices, and hospitals in Kerala since 2001. With 25+ years experience, 300+ clients, and 1500+ employees, we deliver reliable security, cleaning, and patient care services across Kottayam and Kerala." 
+        />
+        
+        {/* Meta Keywords */}
+        <meta 
+          name="keywords" 
+          content="security company Kottayam, cleaning company Kottayam, trusted services Kerala, about smart security services, security services provider Kottayam, cleaning services provider Kerala, patient care company Kottayam, reliable security company Kerala, professional cleaning company Kottayam, healthcare services Kerala" 
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://smartsecuritycleaning.com/about" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="About Us | Smart Security & Cleaning Services Kottayam - Trusted Multi-Service Provider" />
+        <meta property="og:description" content="Learn about Smart Security & Cleaning Services - Kerala's trusted multi-service provider for homes, offices, and hospitals since 2001. 25+ years experience, 300+ clients, 1500+ employees delivering excellence." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smartsecuritycleaning.com/about" />
+        <meta property="og:image" content="https://smartsecuritycleaning.com/assets/about-page-og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="About Smart Security & Cleaning Services - Trusted Multi-Service Provider in Kerala" />
+        <meta property="og:site_name" content="Smart Security & Cleaning Services" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Smart Security & Cleaning Services Kottayam - Trusted Multi-Service Provider" />
+        <meta name="twitter:description" content="Learn about Smart Security & Cleaning Services - Kerala's trusted multi-service provider since 2001. 25+ years experience, 300+ clients, 1500+ employees." />
+        <meta name="twitter:image" content="https://smartsecuritycleaning.com/assets/about-page-twitter-card.jpg" />
+        <meta name="twitter:image:alt" content="About Smart Security & Cleaning Services - Trusted Multi-Service Provider in Kerala" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Smart Security & Cleaning Services" />
+        <meta name="geo.region" content="IN-KL" />
+        <meta name="geo.placename" content="Kottayam, Kerala" />
+        
+        {/* JSON-LD Structured Data for About Page */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Smart Security & Cleaning Services",
+              "url": "https://smartsecuritycleaning.com",
+              "logo": "https://smartsecuritycleaning.com/assets/smart-security-cleaning-logo.png",
+              "description": "Smart Security & Cleaning Services is Kerala's trusted multi-service provider for homes, offices, and hospitals since 2001. We deliver reliable security, cleaning, and patient care services across Kottayam and Kerala with 25+ years experience.",
+              "foundingDate": "2001",
+              "numberOfEmployees": "1500+",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Parayil Building, Opp. Punjab National Bank, Kalathipady",
+                "addressLocality": "Kottayam",
+                "addressRegion": "Kerala", 
+                "postalCode": "686010",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-481-2563333",
+                "contactType": "Customer Service",
+                "availableLanguage": ["English", "Malayalam"],
+                "areaServed": "Kerala, India"
+              },
+              "sameAs": [
+                "https://www.facebook.com/smartsecuritycleaningservices",
+                "https://www.instagram.com/smartsecuritycleaning", 
+                "https://www.linkedin.com/company/smart-security-cleaning-services"
+              ],
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 9.5916,
+                  "longitude": 76.5222
+                },
+                "geoRadius": "100000"
+              },
+              "knowsAbout": [
+                "Security Guard Services",
+                "Professional Cleaning Services", 
+                "Patient Care Services",
+                "Home Nursing",
+                "Facility Management",
+                "Healthcare Support Services"
+              ],
+              "award": [
+                "25+ Years of Service Excellence",
+                "300+ Satisfied Clients",
+                "1500+ Trained Employees"
+              ],
+              "values": [
+                "Trust & Reliability",
+                "Employee Welfare", 
+                "Excellence",
+                "24/7 Support"
+              ]
+            }
+          })}
+        </script>
+      </Helmet>
+
       {/* Compact Hero Section */}
       <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={banner}
-            alt="About Just Hearing Clinic background"
+            alt="About Smart Security & Cleaning Services background"
             className="w-full h-full object-cover"
           />
         </div>

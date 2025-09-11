@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import { Helmet } from 'react-helmet-async';
 import { useEffect, useRef, useState } from "react"
 import { MapPin, Phone, Clock, Users, Search, Home, ChevronRight,Star,Mail} from "lucide-react"
 import banner from '../components/Assets/Images/hero_banner.jpeg';
@@ -241,14 +242,186 @@ const LocationsPage: React.FC = () => {
     }
   }
 
-  return (
+ return (
     <div className="min-h-screen" style={{ backgroundColor: "#2b2b2b" }}>
+      <Helmet>
+        {/* Page Title */}
+        <title>Our Locations | Security, Cleaning & Patient Care Services in Kerala</title>
+        
+        {/* Meta Description */}
+        <meta 
+          name="description" 
+          content="Smart Security & Cleaning Services locations across Kerala. Service coverage in Kottayam and throughout Kerala for security guard services, cleaning services, and home nursing. Find our branch networks and service areas near you." 
+        />
+        
+        {/* Meta Keywords */}
+        <meta 
+          name="keywords" 
+          content="security services Kerala, cleaning services Kerala, home nursing Kerala, security services near me, cleaning services near me, patient care services near me, Smart Security locations Kerala, service coverage Kottayam, branch networks Kerala, security company locations, cleaning company Kerala branches" 
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://smartsecuritycleaning.com/locations" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Our Locations | Security, Cleaning & Patient Care Services in Kerala" />
+        <meta property="og:description" content="Smart Security & Cleaning Services locations across Kerala. Service coverage in Kottayam and throughout Kerala for security, cleaning, and home nursing services. Find our branch networks near you." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smartsecuritycleaning.com/locations" />
+        <meta property="og:image" content="https://smartsecuritycleaning.com/assets/locations-kerala-og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Smart Security & Cleaning Services Locations Across Kerala - Service Coverage Map" />
+        <meta property="og:site_name" content="Smart Security & Cleaning Services" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Locations | Security, Cleaning & Patient Care Services in Kerala" />
+        <meta name="twitter:description" content="Smart Security & Cleaning Services locations across Kerala. Find our branch networks and service coverage for security, cleaning, and patient care services near you." />
+        <meta name="twitter:image" content="https://smartsecuritycleaning.com/assets/locations-kerala-twitter-card.jpg" />
+        <meta name="twitter:image:alt" content="Smart Security & Cleaning Services Locations Across Kerala" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Smart Security & Cleaning Services" />
+        <meta name="geo.region" content="IN-KL" />
+        <meta name="geo.placename" content="Kerala, India" />
+        
+        {/* JSON-LD Structured Data for Locations */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Smart Security & Cleaning Services",
+            "url": "https://smartsecuritycleaning.com/locations",
+            "logo": "https://smartsecuritycleaning.com/assets/smart-security-cleaning-logo.png",
+            "description": "Smart Security & Cleaning Services operates across Kerala with comprehensive service coverage in Kottayam and branch networks throughout the state for security, cleaning, and patient care services.",
+            "areaServed": {
+              "@type": "State",
+              "name": "Kerala",
+              "containsPlace": [
+                {
+                  "@type": "City",
+                  "name": "Kottayam",
+                  "description": "Primary service location and headquarters"
+                },
+                {
+                  "@type": "City", 
+                  "name": "Kozhikode",
+                  "description": "Service coverage area"
+                },
+                {
+                  "@type": "City",
+                  "name": "Thrissur", 
+                  "description": "Service coverage area"
+                },
+                {
+                  "@type": "City",
+                  "name": "Kasargod",
+                  "description": "Service coverage area"
+                },
+                {
+                  "@type": "City",
+                  "name": "Calicut",
+                  "description": "Service coverage area"
+                },
+                {
+                  "@type": "City",
+                  "name": "Kannur",
+                  "description": "Service coverage area"
+                }
+              ]
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Parayil Building, Opp. Punjab National Bank, Kalathipady",
+              "addressLocality": "Kottayam",
+              "addressRegion": "Kerala",
+              "postalCode": "686010",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 9.5916,
+              "longitude": 76.5222
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-481-2563333",
+              "contactType": "Customer Service",
+              "availableLanguage": ["English", "Malayalam"],
+              "areaServed": "Kerala, India"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Services Available Across Kerala",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Security Services Kerala",
+                    "description": "Security guard services available across all major cities in Kerala",
+                    "areaServed": {
+                      "@type": "State",
+                      "name": "Kerala"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Cleaning Services Kerala",
+                    "description": "Professional cleaning services for offices, hospitals, and facilities across Kerala",
+                    "areaServed": {
+                      "@type": "State",
+                      "name": "Kerala"
+                    }
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "Home Nursing Kerala",
+                    "description": "Patient care and home nursing services available throughout Kerala",
+                    "areaServed": {
+                      "@type": "State",
+                      "name": "Kerala"
+                    }
+                  }
+                }
+              ]
+            },
+            "knowsAbout": [
+              "Security Services Kerala",
+              "Cleaning Services Kerala", 
+              "Home Nursing Kerala",
+              "Patient Care Services",
+              "Facility Management",
+              "Healthcare Support"
+            ],
+            "serviceArea": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 10.8505,
+                "longitude": 76.2711
+              },
+              "geoRadius": "200000"
+            }
+          })}
+        </script>
+      </Helmet>
+
       {/* Compact Hero Section */}
       <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={banner}
-            alt="About Just Hearing Clinic background"
+            alt="Smart Security & Cleaning Services Locations Across Kerala - Branch Networks and Service Coverage"
             className="w-full h-full object-cover"
           />
         </div>
@@ -263,7 +436,7 @@ const LocationsPage: React.FC = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
-             Your trusted partner in business security and cleaning excellence since 2001."
+             Serving Kerala with security, cleaning, and patient care excellence since 2001.
             </p>
           </div>
         </div>

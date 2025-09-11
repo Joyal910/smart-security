@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Sparkles, Users, Building, CheckCircle, ArrowRight, Clock, Award, Star, MapPin, Phone, Mail, Check, DollarSign, Globe, Shield } from 'lucide-react';
 import banner from '../components/Assets/Images/hero_banner.jpeg';
 import cleaning_training from '../components/Assets/Images/cleaning_training.jpg';
@@ -56,31 +57,177 @@ const FacilityManagement: React.FC = () => {
 
   return (
     <div className="overflow-x-hidden">
-     {/* Compact Hero Section - Enhanced mobile responsiveness */}
-<section className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
-  <div className="absolute inset-0">
-    <img 
-      src={banner}
-      alt="Professional Cleaning Services background"
-      className="w-full h-full object-cover"
-    />
-  </div>
-  <div className="absolute inset-0 bg-black/25"></div>
-  
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="max-w-4xl mx-auto text-center text-white">
-      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
-        Professional{' '}
-        <span className="text-white">
-          Cleaning Services
-        </span>
-      </h1>
-      <p className="text-sm sm:text-base md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
-       Your trusted partner in business security and cleaning excellence since 2001.
-      </p>
-    </div>
-  </div>
-</section>
+      <Helmet>
+        {/* Page Title */}
+        <title>Cleaning Services in Kottayam | Deep Cleaning & Office Cleaning | Smart Security</title>
+        
+        {/* Meta Description */}
+        <meta 
+          name="description" 
+          content="Professional cleaning services in Kottayam including deep cleaning, office cleaning, hospital cleaning, and housekeeping services. Smart Security offers specialized sanitization protocols, infection control, and eco-friendly cleaning solutions across Kerala with 25+ years experience." 
+        />
+        
+        {/* Meta Keywords */}
+        <meta 
+          name="keywords" 
+          content="cleaning services Kottayam, office cleaning Kottayam, hospital cleaning Kottayam, deep cleaning services Kerala, housekeeping services Kottayam, commercial cleaning Kerala, facility management Kottayam, sanitization services Kerala, infection control cleaning, industrial cleaning Kottayam, professional cleaning Kerala" 
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://smartsecuritycleaning.com/services/cleaning" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Cleaning Services in Kottayam | Deep Cleaning & Office Cleaning | Smart Security" />
+        <meta property="og:description" content="Professional cleaning services in Kottayam including deep cleaning, office cleaning, hospital cleaning, and housekeeping. Specialized sanitization protocols and eco-friendly solutions across Kerala." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smartsecuritycleaning.com/services/cleaning" />
+        <meta property="og:image" content="https://smartsecuritycleaning.com/assets/cleaning-services-og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Professional Cleaning Services in Kottayam - Deep Cleaning, Office Cleaning, Hospital Cleaning" />
+        <meta property="og:site_name" content="Smart Security & Cleaning Services" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cleaning Services in Kottayam | Deep Cleaning & Office Cleaning | Smart Security" />
+        <meta name="twitter:description" content="Professional cleaning services including deep cleaning, office cleaning, hospital cleaning, and housekeeping in Kottayam, Kerala. 25+ years experience." />
+        <meta name="twitter:image" content="https://smartsecuritycleaning.com/assets/cleaning-services-twitter-card.jpg" />
+        <meta name="twitter:image:alt" content="Professional Cleaning Services in Kottayam - Smart Security & Cleaning Services" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Smart Security & Cleaning Services" />
+        <meta name="geo.region" content="IN-KL" />
+        <meta name="geo.placename" content="Kottayam, Kerala" />
+        
+        {/* JSON-LD Structured Data for Cleaning Services */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Professional Cleaning Services Kottayam",
+            "description": "Comprehensive cleaning services in Kottayam including deep cleaning, office cleaning, hospital cleaning, and housekeeping with specialized sanitization protocols and infection control.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Smart Security & Cleaning Services",
+              "image": "https://smartsecuritycleaning.com/assets/smart-security-cleaning-logo.png",
+              "url": "https://smartsecuritycleaning.com/services/cleaning",
+              "telephone": "+91-481-2563333",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Parayil Building, Opp. Punjab National Bank, Kalathipady",
+                "addressLocality": "Kottayam",
+                "addressRegion": "Kerala",
+                "postalCode": "686010",
+                "addressCountry": "IN"
+              }
+            },
+            "serviceType": "Cleaning Services",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Kottayam"
+              },
+              {
+                "@type": "State", 
+                "name": "Kerala"
+              }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Professional Cleaning Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Hospital & Healthcare Cleaning",
+                    "description": "Specialized cleaning services following strict hospital sanitation protocols with infection control and medical waste management."
+                  }
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Commercial & Office Cleaning",
+                    "description": "Comprehensive office cleaning services with daily maintenance, workspace sanitization, and meeting room care."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "Industrial & Facility Cleaning",
+                    "description": "Heavy-duty cleaning for factories, warehouses, and industrial facilities with specialized equipment and techniques."
+                  }
+                }
+              ]
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Training Modules",
+                "value": "8 comprehensive training modules including infection control and chemical handling"
+              },
+              {
+                "@type": "PropertyValue", 
+                "name": "Sanitization",
+                "value": "Hospital-grade sanitization protocols and infection control"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Solutions",
+                "value": "Eco-friendly cleaning solutions available"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Support",
+                "value": "24x7 emergency cleaning services"
+              }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "priceCurrency": "INR",
+              "areaServed": {
+                "@type": "Place",
+                "name": "Kerala, India"
+              }
+            },
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Hospitals, Corporate Offices, Industrial Facilities, Healthcare Centers"
+            }
+          })}
+        </script>
+      </Helmet>
+
+      {/* Compact Hero Section - Enhanced mobile responsiveness */}
+      <section className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={banner}
+            alt="Professional Cleaning Services in Kottayam - Deep Cleaning, Office Cleaning, Hospital Cleaning"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/25"></div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
+              Professional{' '}
+              <span className="text-white">
+                Cleaning Services
+              </span>
+            </h1>
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
+             Your trusted partner in business security and cleaning excellence since 2001.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Cleaning Services Section - Enhanced mobile layout */}
       <section className="bg-white">

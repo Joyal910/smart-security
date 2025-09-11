@@ -1,10 +1,9 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Shield, Users, Building, CheckCircle, ArrowRight, Clock, Award, Star, MapPin, Phone, Mail, Check, DollarSign, Globe, Heart, UserCheck, Stethoscope } from 'lucide-react';
 import banner from '../components/Assets/Images/hero_banner.jpeg'
 import securityguardline from '../components/Assets/Images/securityguardsline.jpg'
 import ondutyguard from '../components/Assets/Images/ondutyguard.jpg'
-// Your original images
-
 
 const SecurityServices = () => {
   const serviceCategories = [
@@ -58,31 +57,168 @@ const SecurityServices = () => {
 
   return (
     <div className="overflow-x-hidden">
-    {/* Compact Hero Section - Enhanced mobile responsiveness */}
-<section className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
-  <div className="absolute inset-0">
-    <img 
-      src={banner}
-      alt="About Just Hearing Clinic background"
-      className="w-full h-full object-cover"
-    />
-  </div>
-  <div className="absolute inset-0 bg-black/25"></div>
-  
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="max-w-4xl mx-auto text-center text-white">
-      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
-        Professional{' '}
-        <span className="text-white">
-          Security Services
-        </span>
-      </h1>
-      <p className="text-sm sm:text-base md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
-       Your trusted partner in business security and cleaning excellence since 2001.
-      </p>
-    </div>
-  </div>
-</section>
+      <Helmet>
+        {/* Page Title */}
+        <title>Security Guard Services in Kottayam | Smart Security & Cleaning Services</title>
+        
+        {/* Meta Description */}
+        <meta 
+          name="description" 
+          content="Professional security guard services in Kottayam for residential, commercial, and private security needs. Smart Security offers trained security personnel, access control, and 24/7 security services across Kerala. ESI & PF compliant with 25+ years experience." 
+        />
+        
+        {/* Meta Keywords */}
+        <meta 
+          name="keywords" 
+          content="security guard services Kottayam, private security Kottayam, security services near me Kottayam, professional security guards Kerala, residential security Kottayam, commercial security services Kottayam, access control Kottayam, facility security Kerala, security personnel Kottayam, 24x7 security services Kerala" 
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://smartsecuritycleaning.com/services/security" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Security Guard Services in Kottayam | Professional Security Guards Kerala" />
+        <meta property="og:description" content="Professional security guard services in Kottayam for residential, commercial, and private security needs. Trained personnel, access control, and 24/7 security services across Kerala." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smartsecuritycleaning.com/services/security" />
+        <meta property="og:image" content="https://smartsecuritycleaning.com/assets/security-services-og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Professional Security Guard Services in Kottayam - Smart Security & Cleaning Services" />
+        <meta property="og:site_name" content="Smart Security & Cleaning Services" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Security Guard Services in Kottayam | Professional Security Guards Kerala" />
+        <meta name="twitter:description" content="Professional security guard services in Kottayam for residential, commercial, and private security needs. 24/7 trained personnel across Kerala." />
+        <meta name="twitter:image" content="https://smartsecuritycleaning.com/assets/security-services-twitter-card.jpg" />
+        <meta name="twitter:image:alt" content="Professional Security Guard Services in Kottayam - Smart Security & Cleaning Services" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Smart Security & Cleaning Services" />
+        <meta name="geo.region" content="IN-KL" />
+        <meta name="geo.placename" content="Kottayam, Kerala" />
+        
+        {/* JSON-LD Structured Data for Security Services */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Security Guard Services Kottayam",
+            "description": "Professional security guard services in Kottayam for residential, commercial, and private security needs. Trained security personnel with access control and 24/7 monitoring.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Smart Security & Cleaning Services",
+              "image": "https://smartsecuritycleaning.com/assets/smart-security-cleaning-logo.png",
+              "url": "https://smartsecuritycleaning.com/services/security",
+              "telephone": "+91-481-2563333",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Parayil Building, Opp. Punjab National Bank, Kalathipady",
+                "addressLocality": "Kottayam",
+                "addressRegion": "Kerala",
+                "postalCode": "686010",
+                "addressCountry": "IN"
+              }
+            },
+            "serviceType": "Security Services",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Kottayam"
+              },
+              {
+                "@type": "State", 
+                "name": "Kerala"
+              }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Security Guard Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Facility Access & Perimeter Security",
+                    "description": "Trained security personnel for facility entry and exit point control with perimeter security."
+                  }
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Access Control & Incident Response",
+                    "description": "Digital access systems management and rapid incident response services."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "Fire & Safety Management",
+                    "description": "Fire prevention, evacuation procedures, and emergency safety protocol management."
+                  }
+                }
+              ]
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Training Modules",
+                "value": "8 comprehensive training modules including emergency response and first aid"
+              },
+              {
+                "@type": "PropertyValue", 
+                "name": "Compliance",
+                "value": "ESI, PF, and government regulation compliant"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Support",
+                "value": "24x7 support and emergency response"
+              }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "priceCurrency": "INR",
+              "areaServed": {
+                "@type": "Place",
+                "name": "Kerala, India"
+              }
+            }
+          })}
+        </script>
+      </Helmet>
+
+      {/* Compact Hero Section - Enhanced mobile responsiveness */}
+      <section className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={banner}
+            alt="Professional Security Guard Services in Kottayam - Smart Security"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/25"></div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
+              Professional{' '}
+              <span className="text-white">
+                Security Services
+              </span>
+            </h1>
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2">
+             Your trusted partner in business security and cleaning excellence since 2001.
+            </p>
+          </div>
+        </div>
+      </section>
 
      {/* Security Services Section - Enhanced mobile layout */}
 <section className="bg-white">

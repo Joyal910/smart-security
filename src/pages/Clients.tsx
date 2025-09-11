@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Star, Award, Users, Building, ArrowRight, Shield, Globe } from 'lucide-react';
 import banner from '../components/Assets/Images/hero_banner.jpeg';
 
@@ -177,32 +178,162 @@ const Clients: React.FC = () => {
   ];
 
   return (
-    <div className="animate-fade-in">
+        <div className="animate-fade-in">
+      <Helmet>
+        {/* Page Title */}
+        <title>Our Clients | Smart Security & Cleaning Services | Trusted by Leading Brands in Kerala</title>
+        
+        {/* Meta Description */}
+        <meta 
+          name="description" 
+          content="Smart Security & Cleaning Services is trusted by leading hospitals, businesses, and residents across Kottayam & Kerala. Our clients include KIMS Hospital, EVM Motors, Mercedes-Benz, Toyota, and major healthcare facilities. 25+ years serving 300+ satisfied clients." 
+        />
+        
+        {/* Meta Keywords */}
+        <meta 
+          name="keywords" 
+          content="cleaning clients Kottayam, patient care clients Kerala, trusted by businesses in Kottayam, Smart Security clients, hospital clients Kerala, corporate clients Kottayam, Mercedes-Benz cleaning services, KIMS Hospital services, EVM Motors security, trusted service provider Kerala, business clients Kottayam" 
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://smartsecuritycleaning.com/clients" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Our Clients | Smart Security & Cleaning Services | Trusted by Leading Brands in Kerala" />
+        <meta property="og:description" content="Smart Security & Cleaning Services is trusted by leading hospitals, businesses, and residents across Kottayam & Kerala. 25+ years serving 300+ satisfied clients including KIMS Hospital, EVM Motors, and major brands." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smartsecuritycleaning.com/clients" />
+        <meta property="og:image" content="https://smartsecuritycleaning.com/assets/clients-testimonials-og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Smart Security & Cleaning Services Clients - Trusted by Leading Brands in Kerala" />
+        <meta property="og:site_name" content="Smart Security & Cleaning Services" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Clients | Smart Security & Cleaning Services | Trusted by Leading Brands in Kerala" />
+        <meta name="twitter:description" content="Trusted by leading hospitals, businesses, and residents across Kerala. 25+ years serving 300+ satisfied clients including major healthcare and automotive brands." />
+        <meta name="twitter:image" content="https://smartsecuritycleaning.com/assets/clients-testimonials-twitter-card.jpg" />
+        <meta name="twitter:image:alt" content="Smart Security & Cleaning Services Clients - Trusted by Leading Brands" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Smart Security & Cleaning Services" />
+        <meta name="geo.region" content="IN-KL" />
+        <meta name="geo.placename" content="Kottayam, Kerala" />
+        
+        {/* JSON-LD Structured Data for Clients/Testimonials */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Smart Security & Cleaning Services",
+            "url": "https://smartsecuritycleaning.com/clients",
+            "logo": "https://smartsecuritycleaning.com/assets/smart-security-cleaning-logo.png",
+            "description": "Smart Security & Cleaning Services is trusted by leading hospitals, businesses, and residents across Kottayam & Kerala with 25+ years of excellence serving 300+ satisfied clients.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Parayil Building, Opp. Punjab National Bank, Kalathipady",
+              "addressLocality": "Kottayam",
+              "addressRegion": "Kerala",
+              "postalCode": "686010",
+              "addressCountry": "IN"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "300",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "knowsAbout": [
+              "Healthcare Security Services",
+              "Automotive Industry Cleaning",
+              "Hospital Cleaning Services",
+              "Corporate Security Solutions",
+              "Patient Care Services"
+            ],
+            "clientList": [
+              {
+                "@type": "Organization",
+                "name": "KIMS Hospital Kasargod",
+                "description": "Leading healthcare facility trusting our security and cleaning services"
+              },
+              {
+                "@type": "Organization", 
+                "name": "EVM Motors Kerala",
+                "description": "All showrooms across Kerala using our security services"
+              },
+              {
+                "@type": "Organization",
+                "name": "Bridgeway Motors Mercedes-Benz",
+                "description": "Premium automotive dealership with our cleaning and security services"
+              },
+              {
+                "@type": "Organization",
+                "name": "Nippon Toyota Thrissur", 
+                "description": "Major automotive dealership with comprehensive facility services"
+              },
+              {
+                "@type": "Organization",
+                "name": "PVS Sunrise Super Specialty Hospital Kozhikode",
+                "description": "Leading healthcare facility with our patient care and cleaning services"
+              },
+              {
+                "@type": "Organization",
+                "name": "Skyline Builders",
+                "description": "Construction company in Calicut & Kannur with our security services"
+              }
+            ],
+            "industry": [
+              "Healthcare & Hospitals",
+              "Automotive Dealerships", 
+              "Construction & Real Estate",
+              "Corporate Offices",
+              "Residential Complexes"
+            ],
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Professional Certification",
+              "name": "ESI & PF Compliance Certification"
+            },
+            "award": [
+              "25+ Years of Service Excellence",
+              "300+ Satisfied Clients",
+              "1500+ Trained Employees",
+              "Trusted by Leading Kerala Brands"
+            ]
+          })}
+        </script>
+      </Helmet>
+
      {/* Compact Hero Section - Enhanced Mobile Responsiveness */}
- <section className="relative min-h-[30vh] sm:min-h-[35vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
-  <div className="absolute inset-0">
-    <img 
-      src={banner}
-      alt="About Just Hearing Clinic background"
-      className="w-full h-full object-cover"
-    />
-  </div>
-  <div className="absolute inset-0 bg-black/25"></div>
-  
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="max-w-4xl mx-auto text-center text-white">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
-        Trusted By{' '}
-        <span className="text-white block sm:inline">
-          Leading Brands
-        </span>
-      </h1>
-      <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2 sm:px-0">
-       Your trusted partner in business security and cleaning excellence since 2001.
-      </p>
-    </div>
-  </div>
-</section>
+     <section className="relative min-h-[30vh] sm:min-h-[35vh] lg:min-h-[40vh] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <img 
+          src={banner}
+          alt="Smart Security & Cleaning Services Clients - Trusted by Leading Brands in Kerala"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-black/25"></div>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up leading-tight">
+            Trusted By{' '}
+            <span className="text-white block sm:inline">
+              Leading Brands
+            </span>
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed animate-fade-in-up animation-delay-300 px-2 sm:px-0">
+           Serving hospitals, businesses, and residents across Kerala with excellence since 2001.
+          </p>
+        </div>
+      </div>
+    </section>
+
 
       {/* International Security Clients Section - Enhanced Mobile Layout */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
