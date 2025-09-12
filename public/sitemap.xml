@@ -4,41 +4,55 @@
   <url>
     <loc>https://smartsecuritycleaning.com/</loc>
     <priority>1.0</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
   <url>
     <loc>https://smartsecuritycleaning.com/about</loc>
     <priority>0.8</priority>
+    <lastmod>2025-09-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://smartsecuritycleaning.com/services</loc>
+    <priority>0.9</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
   <url>
     <loc>https://smartsecuritycleaning.com/services/security</loc>
     <priority>0.9</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
   <url>
     <loc>https://smartsecuritycleaning.com/services/cleaning</loc>
     <priority>0.9</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
   <url>
     <loc>https://smartsecuritycleaning.com/services/patient-assist</loc>
     <priority>0.9</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
   <url>
     <loc>https://smartsecuritycleaning.com/locations</loc>
     <priority>0.7</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
   <url>
     <loc>https://smartsecuritycleaning.com/clients</loc>
     <priority>0.6</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
   <url>
     <loc>https://smartsecuritycleaning.com/contact</loc>
     <priority>0.8</priority>
+    <lastmod>2025-09-11</lastmod>
   </url>
 
 </urlset>

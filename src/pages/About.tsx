@@ -287,10 +287,8 @@ const About = () => {
                   >
                     OUR VISION
                   </div>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    To be Kerala's leading security and cleaning service provider, recognized for our excellence, 
-                    integrity, and innovation. We envision a future where every client feels completely secure and every 
-                    employee is valued.
+                  <p className="text-gray-600 text-sm leading-relaxed text-justify">
+                    To become a globally recognized, professional, and reliable manpower service provider in the fields of Security and Cleaning, delivering structured and accountable solutions that meet the evolving needs of clients worldwide
                   </p>
                 </div>
 
@@ -302,44 +300,9 @@ const About = () => {
                   >
                     OUR MISSION
                   </div>
-                  <ul className="space-y-2">
-                    <li className="flex items-start space-x-3">
-                      <div
-                        className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                        style={{ backgroundColor: "#1E88E5" }}
-                      >
-                        <Check className="w-3 h-3 text-white" />
-                      </div>
-                      <span className="text-gray-600 text-sm">Provide reliable security services with integrity</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <div
-                        className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                        style={{ backgroundColor: "#1E88E5" }}
-                      >
-                        <Check className="w-3 h-3 text-white" />
-                      </div>
-                      <span className="text-gray-600 text-sm">Maintain highest standards of employee welfare</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <div
-                        className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                        style={{ backgroundColor: "#1E88E5" }}
-                      >
-                        <Check className="w-3 h-3 text-white" />
-                      </div>
-                      <span className="text-gray-600 text-sm">Build long-term relationships with clients</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <div
-                        className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                        style={{ backgroundColor: "#1E88E5" }}
-                      >
-                        <Check className="w-3 h-3 text-white" />
-                      </div>
-                      <span className="text-gray-600 text-sm">Continually invest in our team's development</span>
-                    </li>
-                  </ul>
+                   <p className="text-gray-600 text-sm leading-relaxed text-justify">
+                    To deliver professional Security and Cleaning services by integrating technology into daily operations, elevating service standards, and enhancing the quality of work life for our staff-while contributing to the growth and professionalism of the industry as a whole
+                    </p>
                 </div>
               </div>
 
@@ -389,190 +352,189 @@ const About = () => {
       
 
       {/* Why Us Section - Mobile Optimized */}
-      <section
-        className="py-12 sm:py-16 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${whyusbg})` }}
+{/* Why Us Section - Mobile Optimized */}
+<section
+  className="py-12 sm:py-16 bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: `url(${whyusbg})` }}
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    {/* Section Header */}
+    <div className="text-center mb-8 sm:mb-12 pt-4">
+      <div className="inline-block mb-4">
+        <div
+          className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white"
+          style={{ backgroundColor: "#1E88E5" }}
+        >
+          WHY US
+        </div>
+      </div>
+      <h2
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 sm:mb-8 px-2"
+        style={{ color: "#2B2B2B" }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          {/* Section Header */}
-          <div className="text-center mb-8 sm:mb-12 pt-4">
-            <div className="inline-block mb-4">
+        BUILDING TRUST WITH
+        <br />
+        UNMATCHED EXCELLENCE
+      </h2>
+    </div>
+
+    {/* Features Layout - Mobile Responsive */}
+    <div className="relative mt-8 sm:mt-16 lg:mt-40">
+      {/* Mobile Layout - Stacked (Titles Only) */}
+      <div className="lg:hidden space-y-8 mt-8 sm:mt-12">
+        {[
+          { title: "TRAINED PROFESSIONALS", desc: "Our team is fully trained and certified in security, cleaning, and healthcare support to ensure exceptional service delivery." },
+          { title: "TAILORED SOLUTIONS", desc: "We customize our services to meet the unique needs of each client, whether for safety, hygiene, or patient care." },
+          { title: "RELIABLE & ON-TIME", desc: "We value punctuality and consistency, ensuring our personnel are always ready when you need them." },
+          { title: "STRICT QUALITY CONTROL", desc: "Regular audits and supervision guarantee that our services meet the highest industry standards." },
+          { title: "24/7 AVAILABILITY", desc: "Our teams are available around the clock for emergencies, urgent requirements, or scheduled tasks." },
+          { title: "COMPASSION & CARE", desc: "Especially in healthcare assistance, we deliver support with empathy, dignity, and respect." }
+        ].map((item, index) => (
+          <div key={index} className="text-center">
+            <div className="flex items-center justify-center mb-4">
               <div
-                className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-white"
+                className="px-4 sm:px-6 py-2 sm:py-3 rounded-full text-white font-bold text-xs sm:text-sm tracking-wider uppercase"
                 style={{ backgroundColor: "#1E88E5" }}
               >
-                WHY US
+                {item.title}
               </div>
             </div>
-            <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 sm:mb-8 px-2"
-              style={{ color: "#2B2B2B" }}
-            >
-              BUILDING TRUST WITH
-              <br />
-              UNMATCHED EXCELLENCE
-            </h2>
+            {/* Description removed from mobile view */}
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop Layout - Grid (With Descriptions) */}
+      <div className="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-20 items-center">
+        {/* Left Column Features */}
+        <div className="space-y-12 lg:pr-12">
+          {/* Trained Professionals */}
+          <div className="text-left">
+            <div className="flex items-center justify-start mb-4">
+              <div
+                className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
+                style={{ backgroundColor: "#1E88E5" }}
+              >
+                TRAINED PROFESSIONALS
+              </div>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
+              Our team is fully trained and certified in security, cleaning, and healthcare assistance to ensure excellence.
+            </p>
+            <div className="mt-4">
+              <div className="w-32 h-px border-t-2 border-dotted" style={{ borderColor: "#1E88E5" }}></div>
+            </div>
           </div>
 
-          {/* Features Layout - Mobile Responsive */}
-          <div className="relative mt-8 sm:mt-16 lg:mt-40">
-            {/* Mobile Layout - Stacked */}
-            <div className="lg:hidden space-y-8">
-              {[
-                { title: "TRAINED PROFESSIONALS", desc: "Our team is fully trained and certified in security, cleaning, and healthcare support to ensure exceptional service delivery." },
-                { title: "TAILORED SOLUTIONS", desc: "We customize our services to meet the unique needs of each client, whether for safety, hygiene, or patient care." },
-                { title: "RELIABLE & ON-TIME", desc: "We value punctuality and consistency, ensuring our personnel are always ready when you need them." },
-                { title: "STRICT QUALITY CONTROL", desc: "Regular audits and supervision guarantee that our services meet the highest industry standards." },
-                { title: "24/7 AVAILABILITY", desc: "Our teams are available around the clock for emergencies, urgent requirements, or scheduled tasks." },
-                { title: "COMPASSION & CARE", desc: "Especially in healthcare assistance, we deliver support with empathy, dignity, and respect." }
-              ].map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex items-center justify-center mb-4">
-                    <div
-                      className="px-4 sm:px-6 py-2 sm:py-3 rounded-full text-white font-bold text-xs sm:text-sm tracking-wider uppercase"
-                      style={{ backgroundColor: "#1E88E5" }}
-                    >
-                      {item.title}
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
+          {/* Tailored Solutions */}
+          <div className="text-left">
+            <div className="flex items-center justify-start mb-4">
+              <div
+                className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
+                style={{ backgroundColor: "#1E88E5" }}
+              >
+                TAILORED SOLUTIONS
+              </div>
             </div>
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
+              We adapt our services to match your specific requirements — from high-security protocols to sensitive patient care.
+            </p>
+            <div className="mt-4">
+              <div className="w-32 h-px border-t-2 border-dotted" style={{ borderColor: "#1E88E5" }}></div>
+            </div>
+          </div>
 
-            {/* Desktop Layout - Grid */}
-            <div className="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-20 items-center">
-              {/* Left Column Features */}
-              <div className="space-y-12 lg:pr-12">
-                {/* Trained Professionals */}
-                <div className="text-left">
-                  <div className="flex items-center justify-start mb-4">
-                    <div
-                      className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
-                      style={{ backgroundColor: "#1E88E5" }}
-                    >
-                      TRAINED PROFESSIONALS
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
-                    Our team is fully trained and certified in security, cleaning, and healthcare assistance to ensure excellence.
-                  </p>
-                  <div className="mt-4">
-                    <div className="w-32 h-px border-t-2 border-dotted" style={{ borderColor: "#1E88E5" }}></div>
-                  </div>
-                </div>
-
-                {/* Tailored Solutions */}
-                <div className="text-left">
-                  <div className="flex items-center justify-start mb-4">
-                    <div
-                      className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
-                      style={{ backgroundColor: "#1E88E5" }}
-                    >
-                      TAILORED SOLUTIONS
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
-                    We adapt our services to match your specific requirements — from high-security protocols to sensitive patient care.
-                  </p>
-                  <div className="mt-4">
-                    <div className="w-32 h-px border-t-2 border-dotted" style={{ borderColor: "#1E88E5" }}></div>
-                  </div>
-                </div>
-
-                {/* Reliable & On-Time */}
-                <div className="text-left">
-                  <div className="flex items-center justify-start mb-4">
-                    <div
-                      className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
-                      style={{ backgroundColor: "#1E88E5" }}
-                    >
-                      RELIABLE & ON-TIME
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
-                    Punctuality and consistency are at the core of our operations — we're always ready when you need us.
-                  </p>
-                  <div className="mt-4">
-                    <div className="w-32 h-px border-t-2 border-dotted" style={{ borderColor: "#1E88E5" }}></div>
-                  </div>
-                </div>
+          {/* Reliable & On-Time */}
+          <div className="text-left">
+            <div className="flex items-center justify-start mb-4">
+              <div
+                className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
+                style={{ backgroundColor: "#1E88E5" }}
+              >
+                RELIABLE & ON-TIME
               </div>
-
-              {/* Center Column - Empty for background image */}
-              <div className="flex justify-center items-center px-6"></div>
-
-              {/* Right Column Features */}
-              <div className="space-y-12 lg:pl-12">
-                {/* Strict Quality Control */}
-                <div className="text-right">
-                  <div className="flex items-center justify-end mb-4">
-                    <div
-                      className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
-                      style={{ backgroundColor: "#1E88E5" }}
-                    >
-                      STRICT QUALITY CONTROL
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs ml-auto">
-                    Continuous monitoring and audits ensure our work meets the highest industry benchmarks.
-                  </p>
-                  <div className="mt-4">
-                    <div
-                      className="w-32 h-px border-t-2 border-dotted ml-auto"
-                      style={{ borderColor: "#1E88E5" }}
-                    ></div>
-                  </div>
-                </div>
-
-                {/* 24/7 Availability */}
-                <div className="text-right">
-                  <div className="flex items-center justify-end mb-4">
-                    <div
-                      className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
-                      style={{ backgroundColor: "#1E88E5" }}
-                    >
-                      24/7 AVAILABILITY
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs ml-auto">
-                    Our teams are on standby day and night for emergencies, urgent calls, or scheduled tasks.
-                  </p>
-                  <div className="mt-4">
-                    <div
-                      className="w-32 h-px border-t-2 border-dotted ml-auto"
-                      style={{ borderColor: "#1E88E5" }}
-                    ></div>
-                  </div>
-                </div>
-
-                {/* Compassion & Care */}
-                <div className="text-right">
-                  <div className="flex items-center justify-end mb-4">
-                    <div
-                      className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
-                      style={{ backgroundColor: "#1E88E5" }}
-                    >
-                      COMPASSION & CARE
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs ml-auto">
-                    In healthcare services, we treat every patient with empathy, dignity, and respect while meeting their needs.
-                  </p>
-                  <div className="mt-4">
-                    <div
-                      className="w-32 h-px border-t-2 border-dotted ml-auto"
-                      style={{ borderColor: "#1E88E5" }}
-                    ></div>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
+              Punctuality and consistency are at the core of our operations — we're always ready when you need us.
+            </p>
+            <div className="mt-4">
+              <div className="w-32 h-px border-t-2 border-dotted" style={{ borderColor: "#1E88E5" }}></div>
             </div>
           </div>
         </div>
-      </section>
+
+        {/* Center Column - Empty for background image */}
+        <div className="flex justify-center items-center px-6"></div>
+
+        {/* Right Column Features */}
+        <div className="space-y-12 lg:pl-12">
+          {/* Strict Quality Control */}
+          <div className="text-right">
+            <div className="flex items-center justify-end mb-4">
+              <div
+                className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
+                style={{ backgroundColor: "#1E88E5" }}
+              >
+                STRICT QUALITY CONTROL
+              </div>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs ml-auto">
+              Continuous monitoring and audits ensure our work meets the highest industry benchmarks.
+            </p>
+            <div className="mt-4">
+              <div
+                className="w-32 h-px border-t-2 border-dotted ml-auto"
+                style={{ borderColor: "#1E88E5" }}
+              ></div>
+            </div>
+          </div>
+
+          {/* 24/7 Availability */}
+          <div className="text-right">
+            <div className="flex items-center justify-end mb-4">
+              <div
+                className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
+                style={{ backgroundColor: "#1E88E5" }}
+              >
+                24/7 AVAILABILITY
+              </div>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs ml-auto">
+              Our teams are on standby day and night for emergencies, urgent calls, or scheduled tasks.
+            </p>
+            <div className="mt-4">
+              <div
+                className="w-32 h-px border-t-2 border-dotted ml-auto"
+                style={{ borderColor: "#1E88E5" }}
+              ></div>
+            </div>
+          </div>
+
+          {/* Compassion & Care */}
+          <div className="text-right">
+            <div className="flex items-center justify-end mb-4">
+              <div
+                className="px-6 py-3 rounded-full text-white font-bold text-sm tracking-wider uppercase"
+                style={{ backgroundColor: "#1E88E5" }}
+              >
+                COMPASSION & CARE
+              </div>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs ml-auto">
+              In healthcare services, we treat every patient with empathy, dignity, and respect while meeting their needs.
+            </p>
+            <div className="mt-4">
+              <div
+                className="w-32 h-px border-t-2 border-dotted ml-auto"
+                style={{ borderColor: "#1E88E5" }}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 };

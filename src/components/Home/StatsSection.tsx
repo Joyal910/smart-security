@@ -11,7 +11,7 @@ const StatsSection: React.FC = () => {
 
   // Animation targets - updated to match the new design
   const targets = {
-    clients: 500,
+    clients: 300,
     experience: 24,
     districts: 14,
     support: 24

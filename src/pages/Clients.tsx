@@ -346,7 +346,7 @@ const Clients: React.FC = () => {
               </h2>
             </div>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4 lg:px-0">
-              Being Kerala's best security and cleaning service .We have worked for over 500 security clients over the last 25 years across Kerela. Our Customer
+              Being Kerala's best security and cleaning service .We have worked for over 300+ security clients over the last 25 years across Kerela. Our Customer
               list is the Proof of our Ability and Quality. Most of our customers are corporate enterprises, we work
               directly with their security or facility teams. 
             </p>
