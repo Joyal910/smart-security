@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
   // Branch locations with coordinates
   const branchLocations = [
     {
-      name: "Co-Operate Office - Kottayam",
+      name: "Corporate Office - Kottayam",
       address: "Smart Security and Cleaning Services, Kottayam, Kerala",
       phone: "+91 79944 55047",
       coords: { lat: 9.5915, lng: 76.5222 },
@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
               <h3 style="color: #1E88E5; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">
                 ${location.name}
               </h3>
-              ${location.isHeadOffice ? '<span style="background: #1E88E5; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: bold;">Co-Operate Office</span><br><br>' : ''}
+              ${location.isHeadOffice ? '<span style="background: #1E88E5; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: bold;">Corporate Office</span><br><br>' : ''}
               <p style="margin: 4px 0; color: #666; font-size: 14px;">
                 <strong>Address:</strong><br>${location.address}
               </p>
@@ -220,7 +220,7 @@ const Contact: React.FC = () => {
     icon: Phone,
     title: 'Call Us',
     phones: ['+91 79944 55047', '+91 98472 20060'], 
-    secondary: 'Co-Operate Office - Kottayam'
+    secondary: 'Corporate Office - Kottayam'
   },
   {
     icon: Mail,
@@ -231,7 +231,7 @@ const Contact: React.FC = () => {
   {
     icon: MapPin,
     title: 'Visit Us',
-    primary: 'Co-Operate Office',
+    primary: 'Corporate Office',
     secondary: 'Kottayam, Kerala',
     action: '#'
   },
@@ -647,7 +647,7 @@ return (
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <div className="text-white p-4 sm:p-6 rounded-lg animate-slide-up" style={{ backgroundColor: "#1E88E5" }}>
-              <h3 className="font-bold text-base sm:text-lg mb-2">Co-Operate Office - Kottayam</h3>
+              <h3 className="font-bold text-base sm:text-lg mb-2">Corporate Office - Kottayam</h3>
               <p className="mb-3 text-sm sm:text-base" style={{ color: "#E3F2FD" }}>Central Kerala Operations</p>
               <a
                 href="tel:+9179944 55047"

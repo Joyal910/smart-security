@@ -19,7 +19,7 @@ const LocationsPage: React.FC = () => {
   const locations = [
     {
       id: 0,
-      name: "Co-operate OFFICE",
+      name: "Corporate OFFICE",
       area: "Kottayam",
       phone: "+91 79944 55047",
       coords: [9.5915, 76.5222],
@@ -199,7 +199,7 @@ const LocationsPage: React.FC = () => {
         marker.bindPopup(`
           <div class="p-3">
             <strong class="text-lg" style="color: #1E88E5;">${location.name}</strong>
-            ${location.isHeadOffice ? '<br><span class="bg-blue-500 text-white px-2 py-1 rounded text-sm font-semibold">Co-Operate Office</span>' : ""}
+            ${location.isHeadOffice ? '<br><span class="bg-blue-500 text-white px-2 py-1 rounded text-sm font-semibold">Corporate Office</span>' : ""}
             <br><span class="text-gray-600">${location.area}</span>
             <br><a href="tel:${location.phone}" class="text-blue-600 hover:underline font-medium">${location.phone}</a>
             ${location.address ? `<br><span class="text-sm text-gray-500">${location.address}</span>` : ""}
@@ -558,7 +558,7 @@ const LocationsPage: React.FC = () => {
                                 className="text-white text-center py-2 px-3 sm:px-4 rounded-full text-xs sm:text-sm font-bold"
                                 style={{ backgroundColor: "#1E88E5" }}
                               >
-                                🏢 Co-operate Office
+                                🏢 Corporate Office
                               </div>
                               <div 
                                 className="text-xs px-2 py-1 rounded"

@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
               </p>
 
               <div className="text-xs sm:text-sm text-gray-500">
-                Smart Security is a{' '}
+                Smart is a{' '}
                 <span className="text-orange-400 font-medium">Kerala-based</span> company.
               </div>
 
