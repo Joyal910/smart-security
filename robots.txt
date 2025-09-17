@@ -1,0 +1,10 @@
+User-agent: *
+# Allow search engines to crawl all normal pages
+Allow: /
+
+# Block form endpoints or backend APIs (if any exist)
+Disallow: /api/
+Disallow: /contact/submit
+
+# Sitemap location
+Sitemap: https://smartsecuritycleaning.com/sitemap.xml

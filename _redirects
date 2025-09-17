@@ -1,0 +1,5 @@
+/assets/*    /assets/:splat    200
+/*           /index.html       200
+
+# Force naked domain → www with HTTPS
+https://smartsecuritycleaning.com/*   https://www.smartsecuritycleaning.com/:splat   301!
