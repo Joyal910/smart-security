@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     
     try {
-      const response = await fetch('https://formspree.io/f/mjkeldky', {
+      const response = await fetch('https://formspree.io/f/mldpwkog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
